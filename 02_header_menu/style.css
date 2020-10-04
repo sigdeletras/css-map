@@ -1,8 +1,49 @@
-html, body {
-    margin: 0px;
+/* Reset rules */ 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
+/* Basic rules */ 
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav */ 
+
+nav {
+    overflow: hidden;
+    background-color: #161925;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(100, 100, 100, 1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(100, 100, 100, 1);
+    box-shadow: 0px 2px 5px 0px rgba(100, 100, 100, 1);
+}
+
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #8EA8C3;
+    color: black;
+}
+
+nav a.logo {
+    background-color: #23395b;
+    color: white;
+}
+
+/* Map */ 
+
 .map {
-    height: 100vh;
+    height: calc(100vh - 48px);
     width: 100%;
   }
