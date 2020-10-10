@@ -1,0 +1,94 @@
+/* Reset rules */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Variables */
+
+:root {
+    /* Colors */
+    --bg-header: #161925;
+    --bg-header-hover: #8EA8C3;
+    --font-color-nav: #f2f2f2;
+    --bg-logo: #23395b;
+    /* Fonts */
+    --font-family-body: 'Montserrat', sans-serif;
+}
+
+/* Basic rules */
+
+body {
+    font-family: var(--font-family-body);
+}
+
+/* Nav */
+
+nav {
+    overflow: hidden;
+    background-color: var(--bg-header);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(100, 100, 100, 1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(100, 100, 100, 1);
+    box-shadow: 0px 2px 5px 0px rgba(100, 100, 100, 1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+nav a {
+    /* float: left; */
+    color: var(--font-color-nav);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: var(--bg-header-hover);
+    color: black;
+    font-weight: bold;
+}
+
+nav a.logo {
+    background-color: var(--bg-logo);
+    color: white;
+    font-weight: bold;
+}
+
+/* Map */
+
+.map {
+    height: calc(100vh - 48px);
+    width: 100%;
+}
+
+@media all and (max-width: 768px) {
+    nav {
+        justify-content: space-around;
+    }
+    nav a.logo {
+        flex: 100%;
+    }
+    .map {
+        height: calc(100vh - 96px);
+    }
+}
+
+@media all and (max-width: 480px) {
+    nav {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    nav a {
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .map {
+        height: calc(100vh - 168px);
+    }
+}
