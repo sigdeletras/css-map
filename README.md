@@ -26,4 +26,11 @@ Ejemplos de CSS para diseños de aplicaciones web de mapas.
 
 ![Diseño responsive con Flexbox](img/03_flexbox_responsive.gif)
 
+## 04 Sidepanel y guía de estilos CSS DEM
+
+- [Web Ejemplo 4](http://www.sigdeletras.com/css-map/04_sidepanel/index.html)
+- Entrada - [CSS para mapas. Panel lateral y guía de estilos BEM](http://www.sigdeletras.com/2020/css-para-mapas-panel-laterial-y-guia-de-estilos-bem//)
+- Carpeta de código [04_sidepanel](04_sidepanel)
+
+![Sidepanel y guía de estilos CSS DEM](img/04_sidepanel.gif)
 
