@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Map :: Sidepanel</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ol-layerswitcher@3.7.0/src/ol-layerswitcher.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+    <script src="https://unpkg.com/ol-layerswitcher@3.7.0"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+            <a class="header-nav__btn header-nav__logo" href="#">CSS MAP</a>
+            <a class="header-nav__btn" id="init-view" href="#">Init View</a>
+            <a class="header-nav__btn" id="view-zoom" href="#">Zoom level</a>
+            <a class="header-nav__btn" id="view-extent" href="#">View Extent</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="sidepanel">
+            <h3 class="sidepanel__title">Cities</h3>
+            <div class="resultList"></div>
+        </div>
+        <div class="map" id="map"></div>
+    </div>
+
+</body>
+
+<script type='module' src="main.js"></script>
+
+</html>
